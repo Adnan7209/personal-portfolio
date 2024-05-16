@@ -1,13 +1,15 @@
+import Link from "next/link";
+import React from "react";
 
-import Link from 'next/link'
-import React from 'react'
-
-const Navlink = ({href,title}) => {
+const Navlink = ({ href, title }) => {
   return (
-    <Link href={href}
-                         className='block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white'>
-                            {title}</Link>
-  )
-}
+    <Link
+      href={href}
+      className=" text-[#ADB7BE] hover:text-white duration-300 transition-all "
+    >
+      {title}
+    </Link>
+  );
+};
 
-export default Navlink
+export default Navlink;

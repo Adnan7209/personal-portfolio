@@ -18,20 +18,15 @@ const navLinks = [
 ]
 const Navbar = () => {
   return (
-    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212
-
-
-
-        
-    ]'>
-        <div className='flex flex-wrap items-center justify-between mx-auto p-8'>
-            <Link href={'/'} className='text-xl text-white font-semibold'>PORTFOLIO</Link>
-            <div className='menu hidden md:block md:w-auto ' id='navbar'>
-                <ul className='flex p-4 md:p-0 md:flex-row md:space-x-0 mt-0'>
+    <nav className='bg-[#121212] px-6 md:px-20 py-5 mb-10'>
+        <div className='flex items-center justify-between'>
+            <Link href={'/'} className='text-xl md:text-3xl text-white font-semibold'>PORTFOLIO</Link>
+            <div className=''>
+                <ul className='flex gap-5 md:gap-10 '>
                     
                         {
                             navLinks.map((link,index)=>(
-                                <li key={index}>
+                                <li key={index} className='md:text-3xl hover:scale-125   font-thin transition-all duration-300'>
                                     <Navlink href={link.path} title={link.title} />
 
                                 </li>
