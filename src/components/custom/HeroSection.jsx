@@ -6,11 +6,11 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section>
-      <div className="grid grid-cols-1 md:grid-cols-12 md:px-10 ">
+    <section >
+      <div className="grid grid-cols-1 md:grid-cols-12 md:px-10 mb-[150px] relative">
         <div className="md:col-span-7  place-self-center text-center sm:text-left mb-16 md:mb-0 ">
           <div className="text-white text-2xl lg:text-4xl  mb-4  font-extrabold px-15">
-            <span className="text-transparent  text-4xl md:text-4xl  lg:text-5xl spa bg-clip-text bg-gradient-to-br from-purple-500 via-purple-500 to bg-pink-500">
+            <span className="text-transparent  text-4xl md:text-4xl  lg:text-5xl spa bg-clip-text bg-gradient-to-br from-blue-500 via-purple-500 to to-pink-500">
               Hello,I'm{" "}
             </span>
             <br />
@@ -52,7 +52,7 @@ const HeroSection = () => {
           {/* <div className="pointer-events-none h-[300px] w-[300px] absolute -top-20 left-24 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500  transition-all duration-200  filter blur-xl -z-100 opacity-35"></div> */}
         </div>
         <div className="md:col-span-5 place-self-center relative   ">
-          <div className="rounded-full bg-gradient-to-br from-purple-500 via-purple-500 to bg-pink-500  w-[250px] md:w-[350px] md:h-[350px] h-[250px]   filter blur-xl"></div>
+          <div className="rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to to-pink-500  w-[250px] md:w-[350px] md:h-[350px] h-[250px]   filter blur-xl"></div>
           <Image
             src="/images/user.jpg"
             alt="hero-image"
@@ -66,6 +66,7 @@ const HeroSection = () => {
   </div>
 </div> */}
         </div>
+        <div className="text-[#403f3f] text-8xl  md:text-[120px] font-bold absolute -bottom-[160px] left-[30px] lg:-bottom-[160px] lg:left-[590px] xl:left-[750px] opacity-35">Adnan</div>
       </div>
     </section>
   );

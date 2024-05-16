@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Navlink from './Navlink'
+import { Separator } from '../ui/separator'
 
 const navLinks = [
     {
@@ -37,6 +38,7 @@ const Navbar = () => {
 
             </div>
         </div>
+        
     </nav>
   )
 }
