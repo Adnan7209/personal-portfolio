@@ -12,7 +12,7 @@ import {
 import { Button } from '../ui/button'
 import { Github, Link } from 'lucide-react'
 
-const ProjectImageSection = ({images,liveLink,gitHubLink}) => {
+const ProjectImageSection = ({images,liveLink,gitHubLink }) => {
   return (
     <div className='relative flex justify-center items-center'>
     <Carousel className="w-full md:w-[80%] md:filter md:blur-sm  "

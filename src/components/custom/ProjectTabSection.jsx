@@ -26,7 +26,7 @@ const ProjectTabSection = ({ techUsed, description }) => {
               <CardHeader>
                 <div className="flex flex-wrap gap-5">
                   {techUsed.map((tech, index) => (
-                    <div className=" px-5 md:px-10 py-3 rounded-3xl md:rounded-full  border border-white hover:scale-110 transition-all duration-300">
+                    <div key={index} className=" px-5 md:px-10 py-3 rounded-3xl md:rounded-full  border border-white hover:scale-110 transition-all duration-300">
                       <CardTitle>{tech}</CardTitle>
                     </div>
                   ))}
