@@ -52,7 +52,7 @@ const HeroSection = () => {
           {/* <div className="pointer-events-none h-[300px] w-[300px] absolute -top-20 left-24 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500  transition-all duration-200  filter blur-xl -z-100 opacity-35"></div> */}
         </div>
         <div className="md:col-span-5 place-self-center relative   ">
-          <div className="rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to to-pink-500  w-[250px] md:w-[350px] md:h-[350px] h-[250px]   filter blur-xl"></div>
+          <div className="rounded-full animate-pulse bg-gradient-to-br from-blue-500 via-purple-500 to to-pink-500  w-[250px] md:w-[350px] md:h-[350px] h-[250px]   filter blur-lg"></div>
           <Image
             src="/images/user.jpg"
             alt="hero-image"
