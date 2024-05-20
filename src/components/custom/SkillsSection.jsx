@@ -24,7 +24,7 @@ const SkillsSection = () => {
         <div className="h-[80vh]  overflow-hidden mt-14 md:mt-0  ">
           <div className="flex flex-wrap   animate-scroll-y-sm md:animate-scroll-y-md  lg:animate-scroll-y-lg">
             {techStackList.map((tech, index) => (
-              <div className="hover:scale-110 duration-300 transition-all m-1 my-2 md:m-5">
+              <div key={index} className="hover:scale-110 duration-300 transition-all m-1 my-2 md:m-5">
                 <StackIcon
                   name={tech.icon}
                   className="bg-[#fff] p-3 m-2  rounded-3xl "
