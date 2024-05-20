@@ -11,7 +11,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const ProjectTabSection = ({ techUsed, description }) => {
   return (
     <div className="relative  w-full md:w-[80%] ">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 filter blur-3xl"></div>
+      <div className="absolute animate-pulse inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 filter blur-md"></div>
       <div className="relative backdrop-blur bg-white bg-opacity-30 rounded-lg p-5 h-[50vh] md:h-auto overflow-auto ">
         <Tabs defaultValue="techUsed" className="text-gray-500">
           <TabsList className="grid w-full grid-cols-2 border border-opacity-30 backdrop-blur bg-white bg-opacity-10">
@@ -26,7 +26,10 @@ const ProjectTabSection = ({ techUsed, description }) => {
               <CardHeader>
                 <div className="flex flex-wrap gap-5">
                   {techUsed.map((tech, index) => (
-                    <div key={index} className=" px-5 md:px-10 py-3 rounded-3xl md:rounded-full  border border-white hover:scale-110 transition-all duration-300">
+                    <div
+                      key={index}
+                      className=" px-5 md:px-10 py-3 rounded-3xl md:rounded-full  border border-white hover:scale-110 transition-all duration-300"
+                    >
                       <CardTitle>{tech}</CardTitle>
                     </div>
                   ))}
