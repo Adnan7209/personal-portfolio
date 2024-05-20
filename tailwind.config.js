@@ -74,8 +74,19 @@ module.exports = {
       },
       animation: {
         'glow': 'glow 2s ease-in-out infinite'
-      }
+      },
+      animation: {
+        'scroll-y-sm': 'scroll-y 12s linear infinite',  
+        'scroll-y-md': 'scroll-y 10s linear infinite',  
+        'scroll-y-lg': 'scroll-y 7s linear infinite',
+      },
+      keyframes: {
+        'scroll-y': {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-50%)' },
+        }
     },
   },
   plugins: [require("tailwindcss-animate")],
+}
 }
