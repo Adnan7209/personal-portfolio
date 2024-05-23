@@ -2,7 +2,7 @@ import Project from "./Project";
 
 const ProjectSection = () => {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-10">
       <div className="relative mt-10 p-0 rounded-3xl ">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 filter blur-md  delay-2000 rounded-3xl"></div>
         <div className="relative bg-[#121212] rounded-3xl p-10">
@@ -13,7 +13,7 @@ const ProjectSection = () => {
         </div>
       </div>
       <div
-        className="  bg-neutral-900 p-4 md:p-10 mt-10 rounded-3xl m-3 overflow-scroll h-screen "
+        className="  bg-neutral-900  mt-10 rounded-3xl m-3 overflow-scroll h-screen "
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         <Project />

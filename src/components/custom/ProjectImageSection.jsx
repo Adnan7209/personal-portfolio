@@ -30,7 +30,7 @@ const ProjectImageSection = ({ images, liveLink, gitHubLink }) => {
               <div className="">
                 <Card className="rounded-3xl">
                   <CardContent className="flex aspect-video items-center justify-center ">
-                    <img src={image} alt="image" className="rounded-xl" />
+                    <img src={image} alt="image" className="rounded-xl w-full" />
                   </CardContent>
                 </Card>
               </div>

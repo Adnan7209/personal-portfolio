@@ -48,5 +48,40 @@ export const projectsData = [
       "/images/logoExpress/logoExpress2.png",
     ],
   },
+  {
+    id: 3,
+    name: "KhaoPiyo.com",
+    heading: "A Food Delivery MERN Stack App",
+    liveLink: "https://foodorderingapp-5nyt.onrender.com/",
+    gitHubLink: "https://github.com/Adnan7209/foodOrderingAppFrontend",
+    title: ["majorProject", "webDevelopment"],
+    techUsed: [
+      "Reactjs",
+      "Expressjs",
+      "MongoDb",
+      "Typescript",
+      "auth-0",
+      "Stripe",
+      "Shadcn-UI",      
+      "tailwindCss",
+    ],
+    description: [
+      "Developed a full-stack MERN based food delivery application with separate Git repositories for frontend and backend, hosted separately and communicating through APIs.",
+      "Key features include user account management, restaurant search by city, cuisine filtering, sorting by delivery price/time, and item ordering. Users can manage restaurant profile, including name, banner, cuisines, and menu items.",
+      "Integrated Auth0 for login/signup, utilized TypeScript across frontend and backend, implemented Shadcn-UI for interface design, and Stripe for payment processing. Backend developed with Express and MongoDB."
+    ],
+
+    images: [
+      "/images/khaoPiyo.com/khaoPiyo.com1.png",
+      "/images/khaoPiyo.com/khaoPiyo.com2.png",
+      "/images/khaoPiyo.com/khaoPiyo.com3.png",
+      "/images/khaoPiyo.com/khaoPiyo.com4.png",
+      "/images/khaoPiyo.com/khaoPiyo.com5.png",
+      "/images/khaoPiyo.com/khaoPiyo.com6.png",
+      "/images/khaoPiyo.com/khaoPiyo.com7.png",
+      "/images/khaoPiyo.com/khaoPiyo.com8.png",
+      "/images/khaoPiyo.com/khaoPiyo.com9.png",
+    ],
+  },
 
 ];
