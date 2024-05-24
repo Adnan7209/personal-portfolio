@@ -3,7 +3,7 @@ import Navbar from "@/components/custom/Navbar";
 import ProjectSection from "@/components/custom/ProjectSection";
 import SkillsSection from "@/components/custom/SkillsSection";
 import FloatingButton from "@/components/custom/FloatingButton";
-// import ContactSection from "@/components/custom/contactSection";
+import ContactSection from "@/components/custom/ContactSection";
 
 export default function Home() {
   return (
@@ -13,10 +13,9 @@ export default function Home() {
         <HeroSection />
         <ProjectSection/>
         <SkillsSection/>
+        <ContactSection/>
       </div>
       <FloatingButton/>
-      {/* <ContactSection/> */}
-      
     </main>
   );
 }

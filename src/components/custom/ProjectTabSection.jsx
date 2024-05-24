@@ -11,7 +11,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const ProjectTabSection = ({ techUsed, description }) => {
   return (
     <div className="relative  w-full md:w-[80%] ">
-      <div className="absolute animate-pulse inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 filter blur-md"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 filter blur-md"></div>
       {/* <div className="bg-white opacity-60  blur-sm absolute inset-0"></div> */}
       <div className="relative backdrop-blur bg-white bg-opacity-30 rounded-lg p-5 h-[50vh] md:h-auto overflow-auto ">
         <Tabs defaultValue="techUsed" className="text-gray-500">
