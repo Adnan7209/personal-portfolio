@@ -2,6 +2,7 @@ import HeroSection from "@/components/custom/HeroSection";
 import Navbar from "@/components/custom/Navbar";
 import ProjectSection from "@/components/custom/ProjectSection";
 import SkillsSection from "@/components/custom/SkillsSection";
+import FloatingButton from "@/components/custom/floatingButton";
 // import ContactSection from "@/components/custom/contactSection";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <ProjectSection/>
         <SkillsSection/>
       </div>
+      <FloatingButton/>
       {/* <ContactSection/> */}
       
     </main>

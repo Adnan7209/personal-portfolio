@@ -86,6 +86,18 @@ module.exports = {
           '100%': { transform: 'translateY(-100%)' },
         }
     },
+    animation:{
+      'vibrate':" vibrate 0.1s linear infinite"
+    },
+    keyframes:{
+      'vibrate':{
+        '0%':{ transform: 'translateX(0)' },
+  "25%": { transform: 'translateX(-2px)'},
+  "50%" :{ transform: 'translateX(2px)'},
+  "75%": { transform: 'translateX(-2px)' },
+  "100%" :{ transform: 'translateX(0)' },
+      }
+    }
   },
   plugins: [require("tailwindcss-animate")],
 }
