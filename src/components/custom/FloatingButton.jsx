@@ -1,19 +1,28 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { CircleX } from "lucide-react";
 
 const FloatingButton = () => {
+  const [buttonText, setButtonText] = useState("Profile");
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setButtonText((currentText) => (currentText === "View Profile" ? "Click Here" : "View Profile"));
+    }, 1000); 
+
+    return () => clearInterval(intervalId);
+  }, []);
   const [profile, setProfile] = useState(false);
   return (
-    <div className="fixed bottom-4 right-4 z-50 text-white ">
+    <div className="fixed bottom-6 right-6 z-50 text-white ">
       {!profile && (
         <Button
           onClick={() => setProfile(!profile)}
           className="bg-green-500 hover:bg-green-500 rounded-full animate-bounce hover:animate-vibrate"
         >
-          Profile
+          {buttonText}
         </Button>
       )}
       {profile && (
