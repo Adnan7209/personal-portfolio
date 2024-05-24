@@ -3,10 +3,10 @@ module.exports = {
   important: true,
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -58,47 +58,26 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
-      animation: {
-        'glow': 'glow 2s ease-in-out infinite'
-      },
-      animation: {
-        'scroll-y-sm': 'scroll-y 14s linear infinite',  
-        'scroll-y-md': 'scroll-y 12s linear infinite',  
-        'scroll-y-lg': 'scroll-y 9s linear infinite',
+        "scroll-y-sm": "scroll-y 14s linear infinite",
+        "scroll-y-md": "scroll-y 12s linear infinite",
+        "scroll-y-lg": "scroll-y 9s linear infinite",
+        vibrate: " vibrate 0.1s linear infinite",
       },
       keyframes: {
-        'scroll-y': {
-          '0%': { transform: 'translateY(5%)' },
-          '100%': { transform: 'translateY(-100%)' },
-        }
+        "scroll-y": {
+          "0%": { transform: "translateY(5%)" },
+          "100%": { transform: "translateY(-100%)" },
+        },
+        vibrate: {
+          "0%": { transform: "translateX(0)" },
+          "25%": { transform: "translateX(-2px)" },
+          "50%": { transform: "translateX(2px)" },
+          "75%": { transform: "translateX(-2px)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
     },
-    animation:{
-      'vibrate':" vibrate 0.1s linear infinite"
-    },
-    keyframes:{
-      'vibrate':{
-        '0%':{ transform: 'translateX(0)' },
-  "25%": { transform: 'translateX(-2px)'},
-  "50%" :{ transform: 'translateX(2px)'},
-  "75%": { transform: 'translateX(-2px)' },
-  "100%" :{ transform: 'translateX(0)' },
-      }
-    }
+    plugins: [require("tailwindcss-animate")],
   },
-  plugins: [require("tailwindcss-animate")],
-}
-}
+};
