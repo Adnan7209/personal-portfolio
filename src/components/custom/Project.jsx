@@ -11,7 +11,7 @@ const Project = () => {
       {
         projectsData.map((project,index)=>(
           <a href={`#project-${project.id}`} key={index}>
-          <Button className="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 px-1 py-1 rounded-full hover:scale-110 transition-all duration-300  "><span className="bg-neutral-900 rounded-full px-6 py-2 ">Project #{project.id}</span></Button>
+          <Button className="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 px-1 py-1 rounded-full hover:scale-110 transition-all duration-300  "><span className="bg-neutral-900 rounded-full px-6 py-2 ">Project {project.name}</span></Button>
           </a> 
         ))
       }
